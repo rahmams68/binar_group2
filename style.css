@@ -42,5 +42,61 @@ header .header-bawah .header-kanan a {
 .search-box img {
     width: 20px;
     padding: 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);}
+.icongrid{
+    display: flex;
+    text-align: center;
+    
+    flex-direction: row;
+}
+
+.bariss{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.iconn{
+    width: 15%;
+    padding: 10px; 
+}
+
+.iconn > img{
+    height: 64px; 
+}
+
+.kotak_promo{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.kotak{
+    width: 15%;
+    padding: 10px;
+}
+
+.kotak > p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.kotak > img {
+    width: 100%;
+}
+
+/* untuk handphone */
+
+@media (max-width: 768px) {
+
+    .kotak_promo{
+        display: none;
+        
+    }
+
+    .icongrid{
+        flex-direction: column;
+    }
+
 }
