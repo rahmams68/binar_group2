@@ -2,3 +2,45 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header .header-atas {
+    padding: 15px 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+header .header-atas a {
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+header .header-bawah {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-bawah .header-kiri {
+    display: flex;
+}
+
+header .header-bawah .header-kiri div {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+header .header-bawah .header-kanan a {
+    margin-left: 25px;
+}
+
+.logo img {
+    height: 25px;
+}
+
+.search-box img {
+    width: 20px;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
