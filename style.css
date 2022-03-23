@@ -99,4 +99,7 @@ header .header-bawah .header-kanan a {
         flex-direction: column;
     }
 
+.gambar-carousel{
+    border-radius: 2%;
+    width: 50%;
 }
