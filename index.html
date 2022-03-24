@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Group 2</title>
     <link rel="stylesheet" href="./style.css">
@@ -24,57 +25,20 @@
         <div class="header-bawah">
             <div class="header-kiri">
                 <div class="logo">
-                    <img class="big-logo" src="assets/bukalapak-logo.svg" alt="logo">
-                    <img class="small-logo non-active" src="assets/bukalapak-logo-small.svg" alt="small-logo">
+                    <img src="assets/bukalapak-logo.svg" alt="logo">
                 </div>
 
                 <div class="search-box">
-                    <input type="text" placeholder="Cari produk . . .">
+                    <input type="text" placeholder="Tulis produk yang kamu cari . . .">
                     <img src="assets/search-logo.png" alt="search-btn">
                 </div>
 
                 <div class="dropdown-menu">
                     <a>Kategori</a>
-                    <img src="assets/downward-arrow.png">
-
-                    <div class="drop-content">
-                        <div class="drop-content-kiri">
-                            <!-- <h4>Kategori</h4> -->
-
-                            <div>
-                                <p>Sepeda</p>
-                                <p>Olahraga</p>
-                                <p>Motor</p>
-                                <p>Elektronik</p>
-                                <p>Hobi & Koleksi</p>
-                                <p>Lainnya</p>
-                            </div>
-                        </div>
-
-                        <div class="drop-content-kanan"></div>
-                    </div>
                 </div>
 
                 <div class="dropdown-menu">
                     <a>Produk Virtual</a>
-                    <img src="assets/downward-arrow.png">
-
-                    <div class="drop-content">
-                        <div class="drop-content-kiri">
-                            <!-- <h4>Produk Virtual</h4> -->
-
-                            <div>
-                                <p>Rekomendasi</p>
-                                <p>Games</p>
-                                <p>TopUp & Isi Pulsa</p>
-                                <p>Tagihan</p>
-                                <p>Hiburan</p>
-                                <p>Lainnya</p>
-                            </div>
-                        </div>
-
-                        <div class="drop-content-kanan"></div>
-                    </div>
                 </div>
             </div>
 
@@ -84,122 +48,131 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- Carousel -->
+    <div class="container-fluid">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <div class="carousel-inner row w-10 mxauto" role="listbox">
+                <div class="carousel-item col-md-4 active">
+                    <img class="img-fluid mx-auto d-block" src="1.webp" alt="slide 1">
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="2.webp" alt="slide 2">
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="3.webp" alt="slide 3">
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="4.webp" alt="slide 4">
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="5.webp" alt="slide 5">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- Carousel -->
+
     <div class="icongrid">
         <div class="bariss">
             <div class="iconn">
-                <img src="https://s4.bukalapak.com/athena/1606361301726/original/hp_menu_icon_6ff40e16-7e1b-4fb2-881f-0ac9c4cc1113.jpg" alt=""> 
-                 <p>Super Seller</p>
-             </div>
-             <div class="iconn">
-                 <img src="https://s3.bukalapak.com/dope/1581554929544/original/hp_menu_icon_c74c441a-fa86-42d8-b7ea-3420cde532ec.jpg" alt=""> 
-                  <p>BukaEmas</p>
-              </div>
-              <div class="iconn">
-                 <img src="https://s2.bukalapak.com/dope/1581555601589/original/hp_menu_icon_f28ec829-40fd-4dbd-9ef3-7d491cfc3e5a.jpg" alt=""> 
-                  <p>Pulsa Prabayar</p>
-              </div>
-              <div class="iconn">
-                 <img src="https://s2.bukalapak.com/dope/1581555577452/original/hp_menu_icon_82b331ed-a7b4-4959-9cbc-9df5a94c5e9a.jpg" alt=""> 
-                  <p>Paket Data</p>
-              </div>
+                <img src="https://s4.bukalapak.com/athena/1606361301726/original/hp_menu_icon_6ff40e16-7e1b-4fb2-881f-0ac9c4cc1113.jpg"
+                    alt="">
+                <p>Super Seller</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s3.bukalapak.com/dope/1581554929544/original/hp_menu_icon_c74c441a-fa86-42d8-b7ea-3420cde532ec.jpg"
+                    alt="">
+                <p>BukaEmas</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s2.bukalapak.com/dope/1581555601589/original/hp_menu_icon_f28ec829-40fd-4dbd-9ef3-7d491cfc3e5a.jpg"
+                    alt="">
+                <p>Pulsa Prabayar</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s2.bukalapak.com/dope/1581555577452/original/hp_menu_icon_82b331ed-a7b4-4959-9cbc-9df5a94c5e9a.jpg"
+                    alt="">
+                <p>Paket Data</p>
+            </div>
         </div>
 
         <div class="bariss">
             <div class="iconn">
-                <img src="https://s2.bukalapak.com/dope/1581555568239/original/hp_menu_icon_b3f21cd5-db80-468e-8209-db5fdfa6a694.jpg" alt=""> 
-                 <p>Voucher Game</p>
-             </div>
-             <div class="iconn">
-                <img src="https://s0.bukalapak.com/dope/1581555557556/original/hp_menu_icon_bf558f5e-17c0-4e49-a0a0-5aa55801fba0.jpg" alt=""> 
-                 <p>Token Listrik</p>
-             </div>
-             <div class="iconn">
-                <img src="https://s3.bukalapak.com/dope/1581555423185/original/hp_menu_icon_1841f6a2-c2e0-4ac0-a7bc-f92051bea404.jpg" alt=""> 
-                 <p>Listrik Pascabayar</p>
-             </div>
-             <div class="iconn">
-                <img src="https://s4.bukalapak.com/athena/1587561193329/original/hp_menu_icon_6777cc70-663f-47f0-8431-a8c78fcebe68.jpg" alt=""> 
-                 <p>Kartu Prakerja</p>
-             </div>
+                <img src="https://s2.bukalapak.com/dope/1581555568239/original/hp_menu_icon_b3f21cd5-db80-468e-8209-db5fdfa6a694.jpg"
+                    alt="">
+                <p>Voucher Game</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s0.bukalapak.com/dope/1581555557556/original/hp_menu_icon_bf558f5e-17c0-4e49-a0a0-5aa55801fba0.jpg"
+                    alt="">
+                <p>Token Listrik</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s3.bukalapak.com/dope/1581555423185/original/hp_menu_icon_1841f6a2-c2e0-4ac0-a7bc-f92051bea404.jpg"
+                    alt="">
+                <p>Listrik Pascabayar</p>
+            </div>
+            <div class="iconn">
+                <img src="https://s4.bukalapak.com/athena/1587561193329/original/hp_menu_icon_6777cc70-663f-47f0-8431-a8c78fcebe68.jpg"
+                    alt="">
+                <p>Kartu Prakerja</p>
+            </div>
         </div>
-        
-         
-        
     </div>
 
     <div class="kotak_promo">
-
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/571975820/s-264-264/mobile_MurahMantapMaret_a8a18bc0-8a37-4679-99e9-9da7dec43d92.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/571975820/s-264-264/mobile_MurahMantapMaret_a8a18bc0-8a37-4679-99e9-9da7dec43d92.jpeg"
+                alt="">
             <p>Murah Mantap Maret</p>
         </div>
 
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/945585389/s-264-264/mobile_PromoVoucherGame_03169f0a-e913-4188-aef9-2b9648e8e591.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/945585389/s-264-264/mobile_PromoVoucherGame_03169f0a-e913-4188-aef9-2b9648e8e591.jpeg"
+                alt="">
             <p>Promo Voucher Game</p>
         </div>
 
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/904093246/s-264-264/mobile_ElektrophoneSale_2a71261a-11f6-48ac-afc7-15d0eaca571b.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/904093246/s-264-264/mobile_ElektrophoneSale_2a71261a-11f6-48ac-afc7-15d0eaca571b.jpeg"
+                alt="">
             <p>Elektrophone Sale</p>
         </div>
 
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/980015808/s-264-264/mobile_LifestyleSalebrationMaret_3f91ca34-1d8d-4829-83bf-6f06d5353086.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/980015808/s-264-264/mobile_LifestyleSalebrationMaret_3f91ca34-1d8d-4829-83bf-6f06d5353086.jpeg"
+                alt="">
             <p>Lifestyle Salebration Maret</p>
         </div>
 
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/993237069/s-264-264/mobile_Saletronic_12170bd0-8aa0-49a4-b050-39180a5b4dfc.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/993237069/s-264-264/mobile_Saletronic_12170bd0-8aa0-49a4-b050-39180a5b4dfc.jpeg"
+                alt="">
             <p>Saletronic</p>
         </div>
 
         <div class="kotak">
-            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/171523680/s-264-264/mobile_GGSGasGowesSunmoriMaret_40a83ac0-4769-45d2-bbf6-1a4e2e94ac50.jpeg" alt="">
+            <img src="https://s4.bukalapak.com/rev-banner/flash_banner/171523680/s-264-264/mobile_GGSGasGowesSunmoriMaret_40a83ac0-4769-45d2-bbf6-1a4e2e94ac50.jpeg"
+                alt="">
             <p>GSS (Gas Gowes Sunmori) Maret</p>
         </div>
-
     </div>
-
-    <center>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="gambar-carousel" src="1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="gambar-carousel" src="2.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="gambar-carousel" src="3.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="gambar-carousel" src="4.webp" alt="Fourth slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </center>
 
     <!-- bagian iklan -->
     <div class="iklan">
         <img src="assets/iklan.jpg" alt="iklan">
     </div>
-    
+
     <!-- bagian flash deal -->
     <div class="flash-deal">
         <div class="content-left">
@@ -268,10 +241,10 @@
                 <p>Situs jual beli online mudah & terpercaya</p>
             </div>
         </div>
-
         <div class="footer-bawah"></div>
     </footer>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 </script>
@@ -281,6 +254,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
-
 
 </html>
