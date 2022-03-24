@@ -142,12 +142,13 @@ header .header-bawah .header-kanan a {
 }
 
 footer {
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     margin-top: 50px;
     background-color: rgb(196, 196, 196);
 }
 
 footer .footer-atas {
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -164,6 +165,16 @@ footer .footer-atas .atas-kiri img {
 
 footer .footer-atas .atas-kiri p {
     align-self: center;
+}
+
+footer .footer-bawah {
+    padding: 10px 30px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+}
+
+footer .copyright {
+    padding: 10px 30px;
 }
 
 /* untuk handphone */
