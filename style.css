@@ -101,47 +101,117 @@ header .header-bawah .header-kanan a {
     display: none;
 }
 
-.icongrid{
+/* .logo .non-active {
+    display: none;
+} */
+
+.icongrid {
     display: flex;
     text-align: center;
-    
+
     flex-direction: row;
 }
 
-.bariss{
+.bariss {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.iconn{
+.iconn {
     width: 15%;
-    padding: 10px; 
+    padding: 10px;
 }
 
-.iconn > img{
-    height: 64px; 
+.iconn>img {
+    height: 64px;
 }
 
-.kotak_promo{
+.kotak_promo {
     display: flex;
     text-align: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.kotak{
+.kotak {
     width: 15%;
     padding: 10px;
 }
 
-.kotak > p{
+.kotak>p {
     font-size: 20px;
     font-weight: 300;
 }
 
-.kotak > img {
+.kotak>img {
     width: 100%;
+}
+
+/* Carousel */
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+        transition: none;
+        margin-right: initial;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
 }
 
 /* iklan */
@@ -150,9 +220,9 @@ header .header-bawah .header-kanan a {
     margin-top: 3vw;
 }
 
-.iklan img{
-width: 90%;
-margin-bottom: 3vw;
+.iklan img {
+    width: 90%;
+    margin-bottom: 3vw;
 }
 
 /* flash deal */
@@ -172,7 +242,7 @@ margin-bottom: 3vw;
     margin-top: -3vw;
 }
 
-.content-left-top{
+.content-left-top {
     text-align: center;
     margin-bottom: 1vw;
 }
@@ -186,7 +256,7 @@ margin-bottom: 3vw;
     color: rgb(110, 110, 110);
 }
 
-.content-left-botom button{
+.content-left-botom button {
     font-size: 18px;
     color: white;
     background-color: rgb(247, 28, 65);
@@ -196,7 +266,7 @@ margin-bottom: 3vw;
 }
 
 .content-right {
-    margin-left:  5vw;
+    margin-left: 5vw;
     width: 62vw;
 }
 
@@ -219,17 +289,17 @@ margin-bottom: 3vw;
     width: 100%;
 }
 
-.content-right-cards-card p{
+.content-right-cards-card p {
     margin-left: 1vw;
     margin-bottom: -1vw;
 }
 
-.content-right-cards-card h1{
+.content-right-cards-card h1 {
     margin-left: 1vw;
     margin-bottom: 2vw;
 }
 
-.content-right-cards-card h3{
+.content-right-cards-card h3 {
     margin-left: 1vw;
     margin-top: 3vw;
 }
@@ -331,18 +401,18 @@ footer .copyright p span {
         height: 25px;
     }
 
-    .kotak_promo{
+    .kotak_promo {
         display: none;
-        
+
     }
 
-    .icongrid{
+    .icongrid {
         flex-direction: column;
     }
-    
-    .gambar-carousel{
-    border-radius: 2%;
-    width: 50%;
+
+    .gambar-carousel {
+        border-radius: 2%;
+        width: 50%;
     }
 
     .flash-deal {
@@ -352,7 +422,7 @@ footer .copyright p span {
         flex-direction: column;
         background-color: rgb(235, 235, 235);
     }
-    
+
     .content-left {
         display: flex;
         flex-direction: row;
@@ -361,23 +431,23 @@ footer .copyright p span {
         margin-top: -3vw;
         margin-bottom: 10vw;
     }
-    
-    .content-left-top{
+
+    .content-left-top {
         text-align: center;
         margin-bottom: 1vw;
         margin-top: 5vw;
     }
-    
+
     .content-left-top img {
         width: 20vw;
         margin-bottom: -4vw;
     }
-    
+
     .content-left-top h2 {
         color: rgb(110, 110, 110);
     }
-    
-    .content-left-botom button{
+
+    .content-left-botom button {
         font-size: 18px;
         color: white;
         background-color: rgb(247, 28, 65);
@@ -385,19 +455,19 @@ footer .copyright p span {
         border: 0ch;
         padding: 1vw;
     }
-    
+
     .content-right {
-        margin-left:  3vw;
+        margin-left: 3vw;
         width: 90vw;
     }
-    
+
     .content-right-cards {
         display: flex;
         flex-direction: row;
         overflow-x: auto;
         overflow-y: hidden;
     }
-    
+
     .content-right-cards-card {
         background-color: white;
         width: 45vw;
@@ -405,22 +475,22 @@ footer .copyright p span {
         margin-right: 2vw;
         flex-shrink: 0;
     }
-    
+
     .content-right-cards-card img {
         width: 100%;
     }
-    
-    .content-right-cards-card p{
+
+    .content-right-cards-card p {
         margin-left: 1vw;
         margin-bottom: -1vw;
     }
-    
-    .content-right-cards-card h1{
+
+    .content-right-cards-card h1 {
         margin-left: 1vw;
         margin-bottom: 2vw;
     }
-    
-    .content-right-cards-card h3{
+
+    .content-right-cards-card h3 {
         margin-left: 1vw;
         margin-top: 3vw;
     }
