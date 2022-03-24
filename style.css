@@ -141,6 +141,97 @@ header .header-bawah .header-kanan a {
     width: 100%;
 }
 
+/* iklan */
+.iklan {
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.iklan img{
+width: 90%;
+margin-bottom: 3vw;
+}
+
+/* flash deal */
+.flash-deal {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 235, 235);
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: 3vw;
+    margin-top: -3vw;
+}
+
+.content-left-top{
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.content-left-top img {
+    width: 20vw;
+    margin-bottom: -4vw;
+}
+
+.content-left-top h2 {
+    color: rgb(110, 110, 110);
+}
+
+.content-left-botom button{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(247, 28, 65);
+    border-radius: 5px;
+    border: 0ch;
+    padding: 1vw;
+}
+
+.content-right {
+    margin-left:  5vw;
+    width: 62vw;
+}
+
+.content-right-cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.content-right-cards-card {
+    background-color: white;
+    width: 15vw;
+    height: fit-content;
+    margin-right: 2vw;
+    flex-shrink: 0;
+}
+
+.content-right-cards-card img {
+    width: 100%;
+}
+
+.content-right-cards-card p{
+    margin-left: 1vw;
+    margin-bottom: -1vw;
+}
+
+.content-right-cards-card h1{
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+}
+
+.content-right-cards-card h3{
+    margin-left: 1vw;
+    margin-top: 3vw;
+}
+
+
 footer {
     /* padding: 10px 30px; */
     margin-top: 50px;
@@ -201,9 +292,89 @@ footer .copyright {
     .icongrid{
         flex-direction: column;
     }
-
-.gambar-carousel{
+    
+    .gambar-carousel{
     border-radius: 2%;
     width: 50%;
+    }
+
+    .flash-deal {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .content-left {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: -2vw;
+        margin-top: -3vw;
+        margin-bottom: 10vw;
+    }
+    
+    .content-left-top{
+        text-align: center;
+        margin-bottom: 1vw;
+        margin-top: 5vw;
+    }
+    
+    .content-left-top img {
+        width: 20vw;
+        margin-bottom: -4vw;
+    }
+    
+    .content-left-top h2 {
+        color: rgb(110, 110, 110);
+    }
+    
+    .content-left-botom button{
+        font-size: 18px;
+        color: white;
+        background-color: rgb(247, 28, 65);
+        border-radius: 5px;
+        border: 0ch;
+        padding: 1vw;
+    }
+    
+    .content-right {
+        margin-left:  3vw;
+        width: 90vw;
+    }
+    
+    .content-right-cards {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .content-right-cards-card {
+        background-color: white;
+        width: 45vw;
+        height: fit-content;
+        margin-right: 2vw;
+        flex-shrink: 0;
+    }
+    
+    .content-right-cards-card img {
+        width: 100%;
+    }
+    
+    .content-right-cards-card p{
+        margin-left: 1vw;
+        margin-bottom: -1vw;
+    }
+    
+    .content-right-cards-card h1{
+        margin-left: 1vw;
+        margin-bottom: 2vw;
+    }
+    
+    .content-right-cards-card h3{
+        margin-left: 1vw;
+        margin-top: 3vw;
     }
 }
