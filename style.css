@@ -5,7 +5,7 @@ body {
 
 header .header-atas {
     padding: 15px 30px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(250, 249, 249);
 }
 
 header .header-atas a {
@@ -36,6 +36,10 @@ header .header-bawah .header-kanan {
     align-self: center;
 }
 
+header .header-bawah .header-kanan a {
+    cursor: pointer;
+}
+
 header {
     margin-bottom: 50px;
 }
@@ -56,6 +60,10 @@ header .header-bawah .header-kiri .search-box input {
     height: 30px;
     border: none;
     border-radius: 0;
+}
+
+header .header-bawah .header-kiri .dropdown-menu {
+    background-color: blue;
 }
 
 header .header-bawah .header-kiri .dropdown-menu .drop-content {
@@ -90,13 +98,8 @@ header .header-bawah .header-kanan a {
 }
 
 .logo .small-logo {
-    /* height: 25px; */
     display: none;
 }
-
-/* .logo .non-active {
-    display: none;
-} */
 
 .icongrid{
     display: flex;
@@ -231,17 +234,19 @@ margin-bottom: 3vw;
     margin-top: 3vw;
 }
 
+/* FOOTER */
 
 footer {
-    /* padding: 10px 30px; */
     margin-top: 50px;
-    background-color: rgb(196, 196, 196);
+    /* background-color: rgb(196, 196, 196); */
 }
 
 footer .footer-atas {
-    padding: 10px 30px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
+    border-top: 1px solid rgb(235, 235, 235);
 }
 
 footer .footer-atas .atas-kiri {
@@ -249,23 +254,65 @@ footer .footer-atas .atas-kiri {
 }
 
 footer .footer-atas .atas-kiri img {
-    height: 30px;
+    height: 25px;
     margin-right: 15px;
     align-self: center;
 }
 
 footer .footer-atas .atas-kiri p {
-    align-self: center;
+    font-size: 13px;
+    margin: auto 0;
 }
 
 footer .footer-bawah {
-    padding: 10px 30px;
-    background-color: rgb(240, 240, 240);
+    padding: 40px 30px;
+    background-color: rgb(250, 249, 249);
     display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+footer .footer-bawah div h5 {
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(235, 235, 235);
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer .footer-bawah div h4 {
+    color: rgb(177, 177, 177);
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+footer .footer-bawah div p {
+    font-size: 13px;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+footer .footer-bawah div img {
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 footer .copyright {
     padding: 10px 30px;
+    font-size: 10px;
+}
+
+footer .copyright p {
+    margin: auto 0;
+}
+
+footer .copyright p span {
+    color: rgb(199, 74, 74);
 }
 
 /* untuk handphone */
@@ -376,5 +423,41 @@ footer .copyright {
     .content-right-cards-card h3{
         margin-left: 1vw;
         margin-top: 3vw;
+    }
+
+    footer .footer-bawah {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .footer-bawah div {
+        margin-right: 20px;
+    }
+    
+    footer .footer-bawah div h5 {
+        padding: 0 10px;
+        margin-bottom: 10px;
+        font-size: .5em;
+    }
+    
+    footer .footer-bawah div h4 {
+        margin-bottom: 15px;
+        font-size: .5em;
+    }
+    
+    footer .footer-bawah div p {
+        font-size: .5em;
+        line-height: 10px;
+    }
+    
+    footer .footer-bawah div img {
+        height: .8em;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    footer .copyright {
+        padding: 10px 30px;
+        font-size: .5em;
     }
 }
